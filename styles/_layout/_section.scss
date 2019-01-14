@@ -1,0 +1,62 @@
+.hero {
+  text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../img/hero-2.png);
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  background-color: #f0f0f0;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.875rem;
+  background-size: cover;
+  background-position: center;
+
+  @media only screen and (max-width: $bp-md) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+
+.interests {
+  background-color: #f0f0f0;
+}
+
+.panel {
+  padding: 4rem 0 8rem;
+
+  &--dark {
+    background-color: #333;
+    padding: 10rem 0 12rem;
+    clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+
+    @media only screen and (max-width: $bp-md) {
+      clip-path: polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      padding-top: 8rem;
+      padding-bottom: 10rem;
+      clip-path: polygon(50% 4%, 100% 0, 100% 96%, 50% 100%, 0 96%, 0 0);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+body {
+  background-color: #f0f0f0;
+}
+
+.disable-hover {
+  pointer-events: none;
+}
+
+.heading__wrap {
+  display: flex;
+  justify-content: center;
+}

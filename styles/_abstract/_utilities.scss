@@ -1,0 +1,15 @@
+.mb-large {
+  margin-bottom: 4rem;
+
+  @media only screen and (max-width: $bp-lg) {
+    margin-bottom: 1rem;
+  }
+}
+
+.pb-medium {
+  padding-bottom: 4rem;
+}
+
+.transparent {
+  opacity: 0;
+}

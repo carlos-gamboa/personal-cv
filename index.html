@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Carlos Gamboa</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400"
+      rel="stylesheet"
+    />
+    <link
+      href="node_modules/font-awesome/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css"
+    />
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="css/loading-bar.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="nav">
+              <div class="nav__mobile">
+                <input
+                  type="checkbox"
+                  class="navigation__checkbox"
+                  id="nav-toggle"
+                />
+                <label for="nav-toggle" class="navigation__button">
+                  <span class="navigation__icon">&nbsp;</span>
+                </label>
+              </div>
+              <div class="branding">
+                <img src="img/logo-white.png" alt="Logo" class="branding__logo" />
+              </div>
+              <div class="nav__list-container" id="header-nav">
+                <ul class="nav__list" >
+                  <li class="nav__item">
+                    <a id="main-nav--home" href="#home" class="nav__link active">Home</a>
+                  </li>
+                  <li class="nav__item">
+                    <a id="main-nav--about" href="#about" class="nav__link">About</a>
+                  </li>
+                  <li class="nav__item">
+                    <a id="main-nav--portfolio" href="#portfolio" class="nav__link">Portfolio</a>
+                  </li>
+                  <li class="nav__item">
+                    <a id="main-nav--interests" href="#interests" class="nav__link">Hobbies</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="heading__wrap">
+                <h1 class="heading__primary">Hi, I'm Carlos</h1>
+              </div>
+              <p class="hero__description">A Web Developer in the making</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="panel pb-medium">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="heading__wrap">
+                  <h2 class="heading__secondary">About me</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-large">
+              <div class="col-lg-3 col-md-6 col-12 experience__wrap">
+                <div class="experience transparent" id="experience--1">
+                  <div class="experience__icon-wrap">
+                    <div class="experience__icon-shape">
+                      <i class="fa fa-graduation-cap experience__icon"></i>
+                    </div>
+                  </div>
+
+                  <div class="experience__info">
+                    <p class="experience__title">Bachelor's Degree</p>
+                    <p class="experience__description">
+                      Majored in Computer Science at the University of Costa Rica. Learned both technical and soft skills. Graduation to be in April 2019.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 experience__wrap">
+                <div class="experience transparent" id="experience--2">
+                  <div class="experience__icon-wrap">
+                    <div class="experience__icon-shape">
+                      <i class="fa fa-briefcase experience__icon"></i>
+                    </div>
+                  </div>
+
+                  <div class="experience__info">
+                    <p class="experience__title">Bit of work experience</p>
+                    <p class="experience__description">
+                      Worked as an intern for Costa Rica Software Services for 4 months. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 experience__wrap">
+                <div class="experience transparent" id="experience--3">
+                  <div class="experience__icon-wrap">
+                    <div class="experience__icon-shape">
+                      <i class="fa fa-keyboard-o experience__icon"></i>
+                    </div>
+                  </div>
+
+                  <div class="experience__info">
+                    <p class="experience__title">Hardworking</p>
+                    <p class="experience__description">
+                      Ready to face challenges and grow as a person, to expand my knowledge in the different areas of computer science, especially web development. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 experience__wrap">
+                <div class="experience transparent" id="experience--4">
+                  <div class="experience__icon-wrap">
+                    <div class="experience__icon-shape">
+                      <i class="fa fa-handshake-o experience__icon"></i>
+                    </div>
+                  </div>
+
+                  <div class="experience__info">
+                    <p class="experience__title">Team Player</p>
+                    <p class="experience__description">
+                      Positive person that loves to help and propose solucions. Looking forward to be part of a team.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <h3 class="heading__terciary">Skills</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-6 col-12">
+                <div class="skill transparent" id="skill--1">
+                  <p class="skill__name">SQL</p>
+                  <div
+                    id="skill--sql"
+                    class="ldBar label-center auto"
+                    data-preset="line"
+                    style="width:100%;height:60px"
+                    data-value="0"
+                    data-stroke="#ffbe2f"
+                    data-stroke-trail-width="2"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-12">
+                <div class="skill transparent" id="skill--2">
+                  <p class="skill__name">CSS</p>
+                  <div
+                    id="skill--css"
+                    class="ldBar label-center auto"
+                    data-preset="line"
+                    style="width:100%;height:60px"
+                    data-value="0"
+                    data-stroke="#ffbe2f"
+                    data-stroke-trail-width="2"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-12">
+                <div class="skill transparent" id="skill--3">
+                  <p class="skill__name">Java</p>
+                  <div
+                    id="skill--java"
+                    class="ldBar label-center auto"
+                    data-preset="line"
+                    style="width:100%;height:60px"
+                    data-value="0"
+                    data-stroke="#ffbe2f"
+                    data-stroke-trail-width="2"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-12">
+                <div class="skill transparent" id="skill--4">
+                  <p class="skill__name">Angular</p>
+                  <div
+                    id="skill--angular"
+                    class="ldBar label-center auto"
+                    data-preset="line"
+                    style="width:100%;height:60px"
+                    data-value="0"
+                    data-stroke="#ffbe2f"
+                    data-stroke-trail-width="2"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-12">
+                <div class="skill transparent" id="skill--5">
+                  <p class="skill__name">C#</p>
+                  <div
+                    id="skill--c"
+                    class="ldBar label-center auto"
+                    data-preset="line"
+                    style="width:100%;height:60px"
+                    data-value="0"
+                    data-stroke="#ffbe2f"
+                    data-stroke-trail-width="2"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-12">
+                <div class="skill transparent" id="skill--6">
+                  <p class="skill__name">JavaScript</p>
+                  <div
+                    id="skill--js"
+                    class="ldBar label-center auto"
+                    data-preset="line"
+                    style="width:100%;height:60px"
+                    data-value="0"
+                    data-stroke="#ffbe2f"
+                    data-stroke-trail-width="2"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-md-6"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <div class="panel panel--dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="heading__wrap">
+                  <h2 class="heading__secondary heading__secondary--light">
+                    Portfolio
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="projects">
+                  <div class="project project--1 transparent">
+                    <div class="project__bar">
+                      <div class="project__buttons">
+                        <div class="circle circle--red"></div>
+                        <div class="circle circle--yellow"></div>
+                        <div class="circle circle--green"></div>
+                      </div>
+                      <p class="project__name">Rally Geológico</p>
+                    </div>
+                    <div class="project__info">
+                      <p class="project__description">
+                        Web app for the Centre of Geologic Science Investigation of the University of Costa Rica. Users can create accounts, check their scores, create and join game rooms.
+                      </p>
+                      <ul class="project__languages">
+                        <li class="project__language">Angular</p>
+                        <li class="project__language">CakePhp</li>
+                        <li class="project__language">MySQL</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="project project--2 transparent">
+                    <div class="project__bar">
+                      <div class="project__buttons">
+                        <div class="circle circle--red"></div>
+                        <div class="circle circle--yellow"></div>
+                        <div class="circle circle--green"></div>
+                      </div>
+                      <p class="project__name">Wumpus AR</p>
+                    </div>
+                    <div class="project__info">
+                      <p class="project__description">
+                        Android app about The Wumpus Game with Augmented Reality. Users are able to share maps via Bluetooth and participate in multiplayer games to catch the Wumpus with your friends.
+                      </p>
+                      <ul class="project__languages">
+                        <li class="project__language">Java</li>
+                        <li class="project__language">BeyondAR Library</li>
+                        <li class="project__language">Firebase</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="project project--3 transparent">
+                    <div class="project__bar">
+                      <div class="project__buttons">
+                        <div class="circle circle--red"></div>
+                        <div class="circle circle--yellow"></div>
+                        <div class="circle circle--green"></div>
+                      </div>
+                      <p class="project__name">PatientSnap</p>
+                    </div>
+                    <div class="project__info">
+                      <p class="project__description">
+                          Web app that allows doctors to send multimedia texts to their patients asking for a review of their services. Users can also check their ratings from Google and Yelp all in one app.
+                      </p>
+                      <ul class="project__languages">
+                        <li class="project__language">HTML</li>
+                        <li class="project__language">CSS</p>
+                        <li class="project__language">PHP</p>
+                        <li class="project__language">MySQL</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="interests" id="interests">
+        <div class="panel">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="heading__wrap">
+                  <h2 class="heading__secondary">Hobbies</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="collage">
+                  <div class="collage-item collage-item--1 transparent">
+                    <div
+                      class="collage__img"
+                      role="img"
+                      aria-label="Siamese cat laying on a bed"
+                    ></div>
+                    <p class="collage__caption"><span class="collage__caption-span">Playing with cats</span></p>
+                  </div>
+                  <div class="collage-item collage-item--2 transparent">
+                    <div
+                      class="collage__img"
+                      role="img"
+                      aria-label="Youtube logo"
+                    ></div>
+                    <p class="collage__caption"><span class="collage__caption-span">Going for a walk</span></p>
+                  </div>
+                  <div class="collage-item collage-item--3 transparent">
+                    <div
+                      class="collage__img"
+                      role="img"
+                      aria-label="Videogame console"
+                    ></div>
+                    <p class="collage__caption"><span class="collage__caption-span">Hanging out with friends</span></p>
+                  </div>
+                  <div class="collage-item collage-item--4 transparent">
+                    <div
+                      class="collage__img"
+                      role="img"
+                      aria-label="Television with Netflix logo"
+                    ></div>
+                    <p class="collage__caption"><span class="collage__caption-span">Streaming shows</span></p>
+                  </div>
+                  <div class="collage-item collage-item--5 transparent">
+                    <div
+                      class="collage__img"
+                      role="img"
+                      aria-label="Television with Netflix logo"
+                    ></div>
+                    <p class="collage__caption"><span class="collage__caption-span">Video Games</span></p>
+                  </div>
+                  <div class="collage-item collage-item--6 transparent">
+                    <div
+                      class="collage__img"
+                      role="img"
+                      aria-label="Television with Netflix logo"
+                    ></div>
+                    <p class="collage__caption"><span class="collage__caption-span">Travelling</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <nav class="footer__nav">
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#home" class="footer__link">Home</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#portfolio" class="footer__link">Portfolio</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#interests" class="footer__link">Hobbies</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-sm-6">
+            <nav class="footer__social">
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="mailto:carlos.gamboav19@gmail.com" class="footer__link"
+                    ><i class="fa fa-envelope-o footer__icon icon--mail"></i
+                  ></a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="https://github.com/carlos-gamboa" target="_blank" class="footer__link"
+                    ><i class="fa fa-github footer__icon icon--github"></i
+                  ></a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="https://www.linkedin.com/in/carlos-gamboa-vargas/" target="_blank" class="footer__link"
+                    ><i class="fa fa-linkedin footer__icon icon--linkedin"></i
+                  ></a>
+                </li>
+                <!-- <li class="footer__list-item">
+                  <a href="#portfolio" target="_blank" class="footer__link"
+                    ><i class="fa fa-instagram footer__icon icon--instagram"></i
+                  ></a>
+                </li> -->
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+  <script src="js/loading-bar.js"></script>
+  <script src="js/main.js"></script>
+</html>

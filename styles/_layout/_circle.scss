@@ -1,0 +1,22 @@
+.circle {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.9375rem;
+  border-radius: 50%;
+  border: 1px solid black;
+
+  &--red {
+    background-color: #ff5f58;
+    border-color: #ef524a;
+  }
+
+  &--yellow {
+    background-color: #ffbe2f;
+    border-color: #e2ab44;
+  }
+
+  &--green {
+    background-color: #2ac940;
+    border-color: #2ab935;
+  }
+}
