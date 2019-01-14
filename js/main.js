@@ -232,54 +232,54 @@ $(document).ready(function() {
     }
   );
 
-  $(".collage-item--1").waypoint(
+  $(".collage__item--1").waypoint(
     function(direction) {
-      $(".collage-item--1").addClass("animated fadeInUp");
+      $(".collage__item--1").addClass("animated fadeInUp");
     },
     {
       offset: "75%"
     }
   );
 
-  $(".collage-item--2").waypoint(
+  $(".collage__item--2").waypoint(
     function(direction) {
-      $(".collage-item--2").addClass("animated fadeInUp");
+      $(".collage__item--2").addClass("animated fadeInUp");
     },
     {
       offset: "75%"
     }
   );
 
-  $(".collage-item--3").waypoint(
+  $(".collage__item--3").waypoint(
     function(direction) {
-      $(".collage-item--3").addClass("animated fadeInUp");
+      $(".collage__item--3").addClass("animated fadeInUp");
     },
     {
       offset: "75%"
     }
   );
 
-  $(".collage-item--4").waypoint(
+  $(".collage__item--4").waypoint(
     function(direction) {
-      $(".collage-item--4").addClass("animated fadeInUp");
+      $(".collage__item--4").addClass("animated fadeInUp");
     },
     {
       offset: "75%"
     }
   );
 
-  $(".collage-item--5").waypoint(
+  $(".collage__item--5").waypoint(
     function(direction) {
-      $(".collage-item--5").addClass("animated fadeInUp");
+      $(".collage__item--5").addClass("animated fadeInUp");
     },
     {
       offset: "75%"
     }
   );
 
-  $(".collage-item--6").waypoint(
+  $(".collage__item--6").waypoint(
     function(direction) {
-      $(".collage-item--6").addClass("animated fadeInUp");
+      $(".collage__item--6").addClass("animated fadeInUp");
     },
     {
       offset: "75%"
@@ -287,7 +287,7 @@ $(document).ready(function() {
   );
 
   /* MOBILE NAV */
-  $("#nav-toggle").click(function() {
+  $("#main-nav-toggle").click(function() {
     let nav = $("#header-nav");
 
     nav.slideToggle(200);
