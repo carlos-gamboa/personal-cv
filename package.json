@@ -5,15 +5,17 @@
   "main": "index.js",
   "scripts": {
     "dev": "live-server",
-    "css": "node-sass -w styles/main.scss dist/main.css",
-    "start":"npm-run-all --parallel dev css",
-    "gulp": "gulp watch"
+    "css": "node-sass -w resources/styles/main.scss dist/main.css",
+    "start": "npm-run-all --parallel dev css",
+    "build-sass": "gulp styles"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-sass": "^4.0.2",
     "live-server": "^1.2.1",
     "node-sass": "^4.11.0",
     "npm-run-all": "^4.1.5"
