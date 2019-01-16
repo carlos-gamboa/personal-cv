@@ -39,8 +39,8 @@
       display: none;
     }
 
-    &:checked + .navigation__button {
-      .navigation__icon {
+    &:checked + .main-nav__button {
+      .main-nav__icon {
         @media only screen and (max-width: $bp-md) {
           background-color: transparent;
         }
