@@ -6,7 +6,7 @@
   }
 
   &__info {
-    background-color: #DBDBDB;
+    background-color: #f0f0f0;
     border-radius: 2px;
 
     display: flex;
@@ -32,9 +32,11 @@
   &__text {
     flex: 1 1 86%;
     font-size: 1.0625rem;
+    margin-right: 1rem;
 
     @media only screen and (max-width: $bp-md) {
-      flex-basis: 83%;
+      flex-basis: 75%;
+      line-height: 1.5rem;
     }
   }
 
@@ -52,13 +54,18 @@
     transition: all .3s ease;
 
     @media only screen and (max-width: $bp-md) {
-      flex-basis: 17%;
+      padding: 1.5rem 1.25rem;
+      flex-basis: 25%;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      padding: 1.75rem 1.25rem;
     }
   }
 
   &__icon {
     font-size: 1.875rem;
-    color: #f0f0f0;
+    color: #fff;
 
   }
 }
